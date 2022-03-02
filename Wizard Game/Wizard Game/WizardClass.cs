@@ -37,5 +37,10 @@ namespace WizardGame
         {
             Console.WriteLine("Which spell will you choose? " + spell1 + ", " + spell2 + " ");
         }
+        public void TakeDamage(int monster.lowestDamage, int monster.highestDamage)
+        {
+            Random rand = new Random();
+            public int damageTaken = rand.Next(monster.lowestDamage, monster.highestDamage);
+        }
     }
 }

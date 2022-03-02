@@ -6,10 +6,11 @@ using System.Threading.Tasks;
 
 namespace Wizard_Game
 {
-    public class Goblin
+    public class Monster
     {
-        byte[] array = { 1, 3 };
-        byte attack = 5;
-        Random rand = new Random();
+        byte lowestXp = 1;
+        byte highestXp = 3;
+        int lowestDamage = 1;
+        int highestDamage = 5;
     }
 }
