@@ -5,20 +5,12 @@ namespace WizardGame
     {
         static void Main(string[] args)
         {
-            User user = new User(Convert.ToString(Console.ReadLine()));
-            user.Stinky();
-        }
-    }
-    public class User
-    {
-        public string Name { get; set; }
-        public User(string name)
-        {
-            Name = name;
-        }
-        public void Stinky()
-        {
-            Console.WriteLine("{0} is stinky", Name);
+            User user = new User();
+            user.Setup();
+            Console.WriteLine("Now, {0}, you will begin You trials! Monsters will come, at either level 1, 2, or 3. \nEach monster will give 'xp' depending on what level they are.", user.Name);
+            while (user.Xp < 100)
+            {
+            }
         }
     }
 }
