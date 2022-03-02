@@ -1,0 +1,30 @@
+C:\Users\Aiden\source\repos\Wizard Game\Wizard Game\obj\Debug\net6.0\Wizard Game.csproj.AssemblyReference.cache
+C:\Users\Aiden\source\repos\Wizard Game\Wizard Game\obj\Debug\net6.0\Wizard Game.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Aiden\source\repos\Wizard Game\Wizard Game\obj\Debug\net6.0\Wizard Game.AssemblyInfoInputs.cache
+C:\Users\Aiden\source\repos\Wizard Game\Wizard Game\obj\Debug\net6.0\Wizard Game.AssemblyInfo.cs
+C:\Users\Aiden\source\repos\Wizard Game\Wizard Game\obj\Debug\net6.0\Wizard Game.csproj.CoreCompileInputs.cache
+C:\Users\Aiden\source\repos\Wizard Game\Wizard Game\bin\Debug\net6.0\Wizard Game.exe
+C:\Users\Aiden\source\repos\Wizard Game\Wizard Game\bin\Debug\net6.0\Wizard Game.deps.json
+C:\Users\Aiden\source\repos\Wizard Game\Wizard Game\bin\Debug\net6.0\Wizard Game.runtimeconfig.json
+C:\Users\Aiden\source\repos\Wizard Game\Wizard Game\bin\Debug\net6.0\Wizard Game.dll
+C:\Users\Aiden\source\repos\Wizard Game\Wizard Game\bin\Debug\net6.0\ref\Wizard Game.dll
+C:\Users\Aiden\source\repos\Wizard Game\Wizard Game\bin\Debug\net6.0\Wizard Game.pdb
+C:\Users\Aiden\source\repos\Wizard Game\Wizard Game\obj\Debug\net6.0\Wizard Game.dll
+C:\Users\Aiden\source\repos\Wizard Game\Wizard Game\obj\Debug\net6.0\ref\Wizard Game.dll
+C:\Users\Aiden\source\repos\Wizard Game\Wizard Game\obj\Debug\net6.0\Wizard Game.pdb
+C:\Users\Aiden\source\repos\Wizard Game\Wizard Game\obj\Debug\net6.0\Wizard Game.genruntimeconfig.cache
+C:\Users\Aiden\Desktop\Projects\Visual Studio Code\Wizard Game\Wizard Game\obj\Debug\net6.0\Wizard Game.csproj.AssemblyReference.cache
+C:\Users\Aiden\Desktop\Projects\Visual Studio Code\Wizard Game\Wizard Game\obj\Debug\net6.0\Wizard Game.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Aiden\Desktop\Projects\Visual Studio Code\Wizard Game\Wizard Game\obj\Debug\net6.0\Wizard Game.AssemblyInfoInputs.cache
+C:\Users\Aiden\Desktop\Projects\Visual Studio Code\Wizard Game\Wizard Game\obj\Debug\net6.0\Wizard Game.AssemblyInfo.cs
+C:\Users\Aiden\Desktop\Projects\Visual Studio Code\Wizard Game\Wizard Game\obj\Debug\net6.0\Wizard Game.csproj.CoreCompileInputs.cache
+C:\Users\Aiden\Desktop\Projects\Visual Studio Code\Wizard Game\Wizard Game\obj\Debug\net6.0\Wizard Game.dll
+C:\Users\Aiden\Desktop\Projects\Visual Studio Code\Wizard Game\Wizard Game\obj\Debug\net6.0\ref\Wizard Game.dll
+C:\Users\Aiden\Desktop\Projects\Visual Studio Code\Wizard Game\Wizard Game\obj\Debug\net6.0\Wizard Game.pdb
+C:\Users\Aiden\Desktop\Projects\Visual Studio Code\Wizard Game\Wizard Game\bin\Debug\net6.0\Wizard Game.exe
+C:\Users\Aiden\Desktop\Projects\Visual Studio Code\Wizard Game\Wizard Game\bin\Debug\net6.0\Wizard Game.deps.json
+C:\Users\Aiden\Desktop\Projects\Visual Studio Code\Wizard Game\Wizard Game\bin\Debug\net6.0\Wizard Game.runtimeconfig.json
+C:\Users\Aiden\Desktop\Projects\Visual Studio Code\Wizard Game\Wizard Game\bin\Debug\net6.0\Wizard Game.dll
+C:\Users\Aiden\Desktop\Projects\Visual Studio Code\Wizard Game\Wizard Game\bin\Debug\net6.0\ref\Wizard Game.dll
+C:\Users\Aiden\Desktop\Projects\Visual Studio Code\Wizard Game\Wizard Game\bin\Debug\net6.0\Wizard Game.pdb
+C:\Users\Aiden\Desktop\Projects\Visual Studio Code\Wizard Game\Wizard Game\obj\Debug\net6.0\Wizard Game.genruntimeconfig.cache
