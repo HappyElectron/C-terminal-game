@@ -15,7 +15,6 @@ namespace WizardGame
 
         public void Introduce()
         {
-            
             Console.WriteLine("Your wizard's name is " + name + ".");
         }
         public void IncreaseStats()
@@ -45,11 +44,6 @@ namespace WizardGame
         public void Attack(string spell1, string spell2, string spell3, string spell4)
         {
             Console.WriteLine("Which spell will you choose? " + spell1 + ", " + spell2 + " ");
-        }
-        public void TakeDamage(int monster.lowestDamage, int monster.highestDamage)
-        {
-            public Random rand = new Random();
-            public int damageTaken = rand.Next(monster.lowestDamage, monster.highestDamage);
         }
     }
 }
