@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\nedfp\\OneDrive\\Desktop\\Ned\\Programming\\C#\\terminal game\\GitHub\\Wizard Game\\Wizard Game\\Wizard Game.csproj": {}
+    "C:\\Users\\nedfp\\Documents\\GitHub\\C-terminal-game\\Wizard Game\\Wizard Game\\Wizard Game.csproj": {}
   },
   "projects": {
-    "C:\\Users\\nedfp\\OneDrive\\Desktop\\Ned\\Programming\\C#\\terminal game\\GitHub\\Wizard Game\\Wizard Game\\Wizard Game.csproj": {
+    "C:\\Users\\nedfp\\Documents\\GitHub\\C-terminal-game\\Wizard Game\\Wizard Game\\Wizard Game.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\nedfp\\OneDrive\\Desktop\\Ned\\Programming\\C#\\terminal game\\GitHub\\Wizard Game\\Wizard Game\\Wizard Game.csproj",
+        "projectUniqueName": "C:\\Users\\nedfp\\Documents\\GitHub\\C-terminal-game\\Wizard Game\\Wizard Game\\Wizard Game.csproj",
         "projectName": "Wizard Game",
-        "projectPath": "C:\\Users\\nedfp\\OneDrive\\Desktop\\Ned\\Programming\\C#\\terminal game\\GitHub\\Wizard Game\\Wizard Game\\Wizard Game.csproj",
+        "projectPath": "C:\\Users\\nedfp\\Documents\\GitHub\\C-terminal-game\\Wizard Game\\Wizard Game\\Wizard Game.csproj",
         "packagesPath": "C:\\Users\\nedfp\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\nedfp\\OneDrive\\Desktop\\Ned\\Programming\\C#\\terminal game\\GitHub\\Wizard Game\\Wizard Game\\obj\\",
+        "outputPath": "C:\\Users\\nedfp\\Documents\\GitHub\\C-terminal-game\\Wizard Game\\Wizard Game\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\nedfp\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -54,7 +54,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.102\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.200\\RuntimeIdentifierGraph.json"
         }
       }
     }

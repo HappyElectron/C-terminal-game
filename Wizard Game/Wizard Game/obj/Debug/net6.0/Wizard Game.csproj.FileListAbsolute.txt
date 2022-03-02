@@ -43,3 +43,10 @@ C:\Users\nedfp\OneDrive\Desktop\Ned\Programming\C#\terminal game\GitHub\Wizard G
 C:\Users\nedfp\OneDrive\Desktop\Ned\Programming\C#\terminal game\GitHub\Wizard Game\Wizard Game\bin\Debug\net6.0\ref\Wizard Game.dll
 C:\Users\nedfp\OneDrive\Desktop\Ned\Programming\C#\terminal game\GitHub\Wizard Game\Wizard Game\bin\Debug\net6.0\Wizard Game.pdb
 C:\Users\nedfp\OneDrive\Desktop\Ned\Programming\C#\terminal game\GitHub\Wizard Game\Wizard Game\obj\Debug\net6.0\Wizard Game.genruntimeconfig.cache
+C:\Users\nedfp\Documents\GitHub\C-terminal-game\Wizard Game\Wizard Game\obj\Debug\net6.0\Wizard Game.csproj.AssemblyReference.cache
+C:\Users\nedfp\Documents\GitHub\C-terminal-game\Wizard Game\Wizard Game\obj\Debug\net6.0\Wizard Game.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\nedfp\Documents\GitHub\C-terminal-game\Wizard Game\Wizard Game\obj\Debug\net6.0\Wizard Game.AssemblyInfoInputs.cache
+C:\Users\nedfp\Documents\GitHub\C-terminal-game\Wizard Game\Wizard Game\obj\Debug\net6.0\Wizard Game.AssemblyInfo.cs
+C:\Users\nedfp\Documents\GitHub\C-terminal-game\Wizard Game\Wizard Game\obj\Debug\net6.0\Wizard Game.csproj.CoreCompileInputs.cache
+C:\Users\nedfp\Documents\GitHub\C-terminal-game\Wizard Game\Wizard Game\obj\Debug\net6.0\Wizard Game.dll
+C:\Users\nedfp\Documents\GitHub\C-terminal-game\Wizard Game\Wizard Game\obj\Debug\net6.0\Wizard Game.pdb

@@ -18,25 +18,7 @@ namespace WizardGame
             wizard1.Introduce();
             Console.WriteLine();
             Console.WriteLine("In this game there are three basic skills. Attack, Health, and Special.");
-            Console.WriteLine("Pick one to invest in: (1) Attack, (2) Health, (3) Special");
-            Console.WriteLine();
-            byte tutAtrib = Convert.ToByte(Console.ReadLine());
-            Console.WriteLine();
-            switch (tutAtrib)
-            {
-                case 1:
-                    wizard1.attack += 1;
-                    wizard1.AttackIncrease(wizard1.attack, wizard1.name);
-                    break;
-                case 2:
-                    wizard1.health += 1;
-                    wizard1.HealthIncrease(wizard1.health, wizard1.name);
-                    break;
-                case 3:
-                    wizard1.special += 1;
-                    wizard1.SpecialIncrease(wizard1.special, wizard1.name);
-                    break;
-            }
+            wizard1.IncreaseStats();
             Console.WriteLine();
             Console.WriteLine("Attack is the amount of damage your wizard does to an enemy.");
             Console.WriteLine("Health is the amount of damage your wizard can take before it dies.");

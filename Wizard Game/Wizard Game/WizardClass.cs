@@ -18,20 +18,29 @@ namespace WizardGame
             
             Console.WriteLine("Your wizard's name is " + name + ".");
         }
-        public void AttackIncrease(int attack, string name)
+        public void IncreaseStats()
         {
-            string attackString = Convert.ToString(attack);
-            Console.WriteLine(name + "'s attack has been increased to " + attackString + "!");
-        }
-        public void HealthIncrease(int health, string name)
-        {
-            string healthString = Convert.ToString(health);
-            Console.WriteLine(name + "'s health has been increased to " + healthString + "!");
-        }
-        public void SpecialIncrease(int special, string name)
-        {
-            string specialString = Convert.ToString(special);
-            Console.WriteLine(name + "'s special has been increased to " + specialString + "!");
+            Console.WriteLine("Pick one to invest in: (1) Attack, (2) Health, (3) Special\n");
+            byte tutAtrib = Convert.ToByte(Console.ReadLine());
+            Console.WriteLine();
+            switch (tutAtrib)
+            {
+                case 1:
+                    attack += 1;
+                    string attackString = Convert.ToString(attack);
+                    Console.WriteLine(name + "'s attack has been increased to " + attackString + "!");
+                    break;
+                case 2:
+                    health += 1;
+                    string healthString = Convert.ToString(health);
+                    Console.WriteLine(name + "'s health has been increased to " + healthString + "!");
+                    break;
+                case 3:
+                    special += 1;
+                    string specialString = Convert.ToString(special);
+                    Console.WriteLine(name + "'s special has been increased to " + specialString + "!");
+                    break;
+            }
         }
         public void Attack(string spell1, string spell2, string spell3, string spell4)
         {
@@ -39,7 +48,7 @@ namespace WizardGame
         }
         public void TakeDamage(int monster.lowestDamage, int monster.highestDamage)
         {
-            Random rand = new Random();
+            public Random rand = new Random();
             public int damageTaken = rand.Next(monster.lowestDamage, monster.highestDamage);
         }
     }
