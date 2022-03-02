@@ -8,7 +8,7 @@ namespace Wizard_Game
 {
     public class Goblin
     {
-        byte[] = new byte[2] (1,3)
+        byte[] array = { 1, 3 };
         byte attack = 5;
         Random rand = new Random();
     }
