@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "c3b911fe-181d-4636-bc92-d2a71ae91e37": {
+      "ProjectGuid": "c3b911fe-181d-4636-bc92-d2a71ae91e37",
+      "DisplayName": "TerminalGame",
+      "ColorIndex": 0
+    }
+  },
+  "NextColorIndex": 1
+}
