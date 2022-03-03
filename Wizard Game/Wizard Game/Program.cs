@@ -13,7 +13,7 @@ namespace WizardGame
             {
                 while(wizard1.level == i)
                 {
-
+                    Monster goblin = new Monster(wizard1,1,5,1,3,"Goblin","Earth");
                 }
             }
         }
