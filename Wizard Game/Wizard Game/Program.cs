@@ -8,9 +8,13 @@ namespace WizardGame
         {
             TutorialClass tutorial = new TutorialClass();
             tutorial.Tutorial();
-            for (int i = 0; i < 5; i++)
+            Wizard wizard1 = tutorial.wizard1;
+            for (int i = 1; i <= 5; i++)
             {
-                while(tutorial.wizard1.level = )
+                while(wizard1.level == i)
+                {
+
+                }
             }
         }
     }

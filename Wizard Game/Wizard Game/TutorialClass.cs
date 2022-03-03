@@ -4,11 +4,10 @@ namespace WizardGame
 {
     public class TutorialClass
     {
-        public object wizard1 { get; internal set; }
+        public Wizard wizard1 = new Wizard();
 
         public void Tutorial()
         {
-            Wizard wizard1 = new Wizard();
             Console.WriteLine("Welcome to Wizard Game!\n");
             Console.WriteLine("Time to create a wizard.");
             Console.WriteLine("What will be your wizard's name?\n");
