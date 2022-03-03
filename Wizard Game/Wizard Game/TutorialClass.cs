@@ -1,9 +1,11 @@
-﻿using System;       
+﻿using System;
 
 namespace WizardGame
 {
     public class TutorialClass
     {
+        public object wizard1 { get; internal set; }
+
         public void Tutorial()
         {
             Wizard wizard1 = new Wizard();
