@@ -14,6 +14,7 @@ namespace Wizard_Game
         public int HighestDamage { get; set; }
         public string MonsterName { get; set; }
         public int MonsterType { get; set; }
+        public int damageDealt;
         public int damageTaken;
         public Monster(int lowestXp, int highestXp, int lowestDamage, int highestDamage, string monsterName, int monsterType)
         {
@@ -27,7 +28,7 @@ namespace Wizard_Game
         public void Attack()
         {
             Random rand = new Random();
-            damageTaken = rand.Next(LowestDamage, HighestDamage);
+            damageDealt = rand.Next(LowestDamage, HighestDamage);
         }
         public void TakeDamage()
         {
