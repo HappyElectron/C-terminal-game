@@ -24,11 +24,9 @@ namespace WizardGame
             Console.ReadLine();
             Console.WriteLine("\nYou are attacked by a goblin!");
             Console.WriteLine("Wizard Game is a turn based game. You currently have one option. Attack! Type (Attack) to select it.");
-            string decision = Console.ReadLine();
-            if (decision == "Attack")
-            {
-                
-            }
+            Console.ReadLine();
+            Console.WriteLine("Yowzers! You beat the goblin!\nNow you will enter the main game. Press any key to continue.");
+            Console.ReadLine();
         }
     }
 }
