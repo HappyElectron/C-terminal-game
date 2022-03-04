@@ -37,9 +37,12 @@ namespace WizardGame
             Random rand = new Random();
             damageDealt = rand.Next(LowestDamage, HighestDamage);
             Wizard1.health = Wizard1.health - damageDealt;
+            Console.WriteLine("The {0} attacks! It deals {1} damage!" +
+                "\nYour Wizard now has {2} health remaining.", MonsterName, damageDealt, Wizard1.health);
             if (Wizard1.health <= 0)
             {
-                Console.WriteLine("You lose, fool. Your health is all gone. \nYou were slain by a {0} and the game is now over.\n\nBad", MonsterName);
+                Console.WriteLine("You lose, fool. Your health is all gone." +
+                    "\nYou were slain by a {0} and the game is now over.\n\nBad", MonsterName);
                 Thread.Sleep(1000);
                 Console.WriteLine("I do not know how to make the application quit from here so you're in an infinite loop now.");
                 while (true)

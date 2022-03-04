@@ -13,7 +13,7 @@ namespace WizardGame
         public string spell3;
         public string spell4;
         public int xp = 0;
-        public int level = 0;
+        public int level = 1;
 
         public void Introduce()
         {
