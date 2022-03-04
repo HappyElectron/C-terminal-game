@@ -14,12 +14,11 @@ namespace WizardGame
             wizard1.name = Console.ReadLine();
             Console.WriteLine();
             wizard1.Introduce();
-            Console.WriteLine("\nIn this game there are three basic skills. Attack, Health, and Special.");
+            Console.WriteLine("\nIn this game there are two basic skills. Attack, Health.");
             wizard1.IncreaseStats();
             Console.WriteLine("\nAttack is the amount of damage your wizard does to an enemy.");
             Console.WriteLine("Health is the amount of damage your wizard can take before it dies.");
-            Console.WriteLine("A special is a move that your wizard can perform. Upgrading special will decrease the time between use.");
-            Console.WriteLine("Currently you have two spells. Different spells are effective against different enemies.");
+            Console.WriteLine("Currently you have four spells. Different spells are effective against different enemies.");
             Console.WriteLine("As you use spells against enemies, you will be able to check how effective it was after use, or later in the journal.");
             Console.WriteLine("It's time to fight your first enemy, a goblin! When you are ready, press enter.\n");
             Console.ReadLine();
