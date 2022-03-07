@@ -9,6 +9,8 @@ namespace WizardGame
     public class Monster
     {
         public Wizard Wizard1 { get; set; }
+        public int LowestHealth { get; set; }
+        public int HighestHealth { get; set; }
         public int LowestXp { get; set; }
         public int HighestXp { get; set; }   
         public int LowestDamage { get; set; }
@@ -17,7 +19,8 @@ namespace WizardGame
         public string MonsterType { get; set; }
         public int damageDealt;
         public int damageTaken;
-        public Monster(Wizard wizard1, int lowestXp, int highestXp, int lowestDamage, int highestDamage, string monsterName, string monsterType)
+        public int health;
+        public Monster(Wizard wizard1, int lowestXp, int highestXp, int lowestDamage, int highestDamage, string monsterName, string monsterType, int lowestHealth, int highestHealth)
         {
             Wizard1 = wizard1;
             LowestXp = lowestXp;
@@ -26,6 +29,8 @@ namespace WizardGame
             HighestDamage = highestDamage;
             MonsterName = monsterName;
             MonsterType = monsterType;
+            LowestHealth = lowestHealth;
+            HighestHealth = highestHealth;
         }
         public void Introduce()
         {
@@ -51,7 +56,7 @@ namespace WizardGame
         }
         public void TakeDamage()
         {
-
+            Console.WriteLine("successfully called takedamage()");
         }
     }
 }
