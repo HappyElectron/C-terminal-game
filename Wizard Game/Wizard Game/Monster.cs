@@ -18,6 +18,8 @@ namespace WizardGame
         public string MonsterType { get; set; }
         public int damageDealt;
         public int damageTaken;
+        public int spell;
+
         public Monster(Wizard wizard1, int lowestXp, int highestXp, int lowestDamage, int highestDamage, string monsterName, string monsterType, int health)
         {
             Wizard1 = wizard1;
@@ -53,7 +55,30 @@ namespace WizardGame
         }
         public void TakeDamage()
         {
-            Console.WriteLine("successfully called takedamage()");
+            Console.WriteLine("Now it's your turn! You may attack the {0}.\n" +
+                "You may choose of 4 spells, 'earth', 'air', 'water' or 'fire'. \n" +
+                "They each do different damage based on which monster they are sent against.\n" +
+                "Press the corresponding button to which spell you mean to use!\n", MonsterName);
+            spell = Convert.ToInt32(Console.ReadLine());
+            switch(MonsterType)
+            {
+                case "Earth":
+
+                    break;
+
+
+
+
+                case "Air":
+
+                    break;
+                case "Water":
+
+                    break;
+                case "Fire":
+
+                    break;
+            }
         }
     }
 }
