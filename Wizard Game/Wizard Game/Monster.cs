@@ -36,7 +36,6 @@ namespace WizardGame
         }
         public void Attack()
         {
-            Console.WriteLine("The {0} attacks!",MonsterName);
             Random rand = new Random();
             damageDealt = rand.Next(LowestDamage, HighestDamage);
             Wizard1.health = Wizard1.health - damageDealt;
@@ -68,15 +67,20 @@ namespace WizardGame
                         if (spell == 2)
                         {
                             damageTaken = Wizard1.attack * 3;
+                            Health -= damageTaken;
                             Console.WriteLine("Nice, this spell does Triple Damage to {0} Monsters!\n" +
-                                "You dealt {1} damage to the {2}", MonsterType, damageTaken, MonsterName);
-
+                                "You dealt {1} damage to the {2}\n" +
+                                "It has {3} health remaining", MonsterType, damageTaken, MonsterName, Health);
+                            break;
                         }
                         if (spell == 3 || spell == 1 || spell == 4)
                         {
                             damageTaken = Wizard1.attack;
                             Console.WriteLine("Meh, you did ok; this spell does regular damage to {0} Monsters.\n" +
                                 "You dealt {1} damage to the {2}", MonsterType, damageTaken, MonsterName);
+                            Health -= damageTaken;
+                            break;
+
                         }
                         else
                         {
@@ -96,12 +100,16 @@ namespace WizardGame
                             damageTaken = Wizard1.attack * 3;
                             Console.WriteLine("Nice, this spell does Triple Damage to {0} Monsters!\n" +
                                 "You dealt {1} damage to the {2}", MonsterType, damageTaken, MonsterName);
+                            Health -= damageTaken;
+
                         }
                         if (spell == 3 || spell == 1 || spell == 2)
                         {
                             damageTaken = Wizard1.attack;
                             Console.WriteLine("Meh, you did ok; this spell does regular damage to {0} Monsters.\n" +
                                 "You dealt {1} damage to the {2}", MonsterType, damageTaken, MonsterName);
+                            Health -= damageTaken;
+
                         }
                         else
                         {
@@ -121,12 +129,16 @@ namespace WizardGame
                             damageTaken = Wizard1.attack * 3;
                             Console.WriteLine("Nice, this spell does Triple Damage to {0} Monsters!\n" +
                                 "You dealt {1} damage to the {2}", MonsterType, damageTaken, MonsterName);
+                            Health -= damageTaken;
+
                         }
                         if (spell == 3 || spell == 4 || spell == 2)
                         {
                             damageTaken = Wizard1.attack;
                             Console.WriteLine("Meh, you did ok; this spell does regular damage to {0} Monsters.\n" +
                                 "You dealt {1} damage to the {2}", MonsterType, damageTaken, MonsterName);
+                            Health -= damageTaken;
+
                         }
                         else
                         {
@@ -146,12 +158,16 @@ namespace WizardGame
                             damageTaken = Wizard1.attack * 3;
                             Console.WriteLine("Nice, this spell does Triple Damage to {0} Monsters!\n" +
                                 "You dealt {1} damage to the {2}", MonsterType, damageTaken, MonsterName);
+                            Health -= damageTaken;
+
                         }
                         if (spell == 4 || spell == 1 || spell == 2)
                         {
                             damageTaken = Wizard1.attack;
                             Console.WriteLine("Meh, you did ok; this spell does regular damage to {0} Monsters.\n" +
                                 "You dealt {1} damage to the {2}", MonsterType, damageTaken, MonsterName);
+                            Health -= damageTaken;
+
                         }
                         else
                         {

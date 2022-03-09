@@ -15,6 +15,8 @@ namespace WizardGame
             Monster dragon = new Monster(wizard1, 20, 40, 10, 20, "Dragon", "Fire", 30);
             Random rand = new Random();
             whichMonster = rand.Next(lowerMonster, upperMonster);
+            Console.WriteLine("You are approached by a {0}, and it means to attack you!\n" +
+                "(goblin = 1, Big angry bird = 2, sea serpent = 3 dragon = 4\n",whichMonster);
             switch (whichMonster)
             {
                 case 1:
@@ -22,6 +24,14 @@ namespace WizardGame
                     {
                         goblin.Attack();
                         goblin.TakeDamage();
+                        if(goblin.Health <= 0)
+                        {
+                            wizard1.xp += rand.Next(goblin.LowestXp, goblin.HighestXp);
+                            if(wizard1.xp > 4*wizard1.level)
+                            {
+                                wizard1.level++;
+                            }
+                        }
                     }
                     break;
                 case 2:
@@ -29,6 +39,14 @@ namespace WizardGame
                     {
                         bigAngryBird.Attack();
                         bigAngryBird.TakeDamage();
+                        if (bigAngryBird.Health <= 0)
+                        {
+                            wizard1.xp += rand.Next(bigAngryBird.LowestXp, bigAngryBird.HighestXp);
+                            if (wizard1.xp > 4 * wizard1.level)
+                            {
+                                wizard1.level++;
+                            }
+                        }
                     }
                     break;
                 case 3:
@@ -36,6 +54,14 @@ namespace WizardGame
                     {
                         seaSerpent.Attack();
                         seaSerpent.TakeDamage();
+                        if (seaSerpent.Health <= 0)
+                        {
+                            wizard1.xp += rand.Next(seaSerpent.LowestXp, seaSerpent.HighestXp);
+                            if (wizard1.xp > 4 * wizard1.level)
+                            {
+                                wizard1.level++;
+                            }
+                        }
                     }
                     break;
                 case 4:
@@ -43,9 +69,19 @@ namespace WizardGame
                     {
                         dragon.Attack();
                         dragon.TakeDamage();
+                        if (dragon.Health <= 0)
+                        {
+                            wizard1.xp += rand.Next(dragon.LowestXp, dragon.HighestXp);
+                            if (wizard1.xp > 4 * wizard1.level)
+                            {
+                                wizard1.level++;
+                            }
+                        }
                     }
                     break;
             }
+            Console.WriteLine("Yowza! You beat the monster! it has no more health. \n" +
+                "You're pretty groovy!");
         }
     }
 }
