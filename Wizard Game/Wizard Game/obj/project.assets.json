@@ -8,19 +8,19 @@
     "net6.0": []
   },
   "packageFolders": {
-    "C:\\Users\\nedfp\\.nuget\\packages\\": {}
+    "C:\\Users\\tamam\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\nedfp\\OneDrive\\Desktop\\Ned\\Happy Electron\\C#\\C-terminal-game\\Wizard Game\\Wizard Game\\Wizard Game.csproj",
+      "projectUniqueName": "C:\\Users\\tamam\\Documents\\GitHub\\C-terminal-game\\Wizard Game\\Wizard Game\\Wizard Game.csproj",
       "projectName": "Wizard Game",
-      "projectPath": "C:\\Users\\nedfp\\OneDrive\\Desktop\\Ned\\Happy Electron\\C#\\C-terminal-game\\Wizard Game\\Wizard Game\\Wizard Game.csproj",
-      "packagesPath": "C:\\Users\\nedfp\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\nedfp\\OneDrive\\Desktop\\Ned\\Happy Electron\\C#\\C-terminal-game\\Wizard Game\\Wizard Game\\obj\\",
+      "projectPath": "C:\\Users\\tamam\\Documents\\GitHub\\C-terminal-game\\Wizard Game\\Wizard Game\\Wizard Game.csproj",
+      "packagesPath": "C:\\Users\\tamam\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\tamam\\Documents\\GitHub\\C-terminal-game\\Wizard Game\\Wizard Game\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\nedfp\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\tamam\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -60,7 +60,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.200\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.101\\RuntimeIdentifierGraph.json"
       }
     }
   }

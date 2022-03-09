@@ -18,7 +18,7 @@ namespace WizardGame
             wizard1.IncreaseStats();
             Console.WriteLine("\nAttack is the amount of damage your wizard does to an enemy.");
             Console.WriteLine("Health is the amount of damage your wizard can take before it dies.");
-            Console.WriteLine("Currently you have four spells. Different spells are effective against different enemies.");
+            Console.WriteLine("Currntly you have four spells. Different spells are effective against different enemies.");
             Console.WriteLine("As you use spells against enemies, you will be able to check how effective it was after use, or later in the journal.");
             Console.WriteLine("It's time to fight your first enemy, a goblin! When you are ready, press enter.\n");
             Console.ReadLine();
