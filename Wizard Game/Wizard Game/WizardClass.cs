@@ -13,6 +13,7 @@ namespace WizardGame
         public string spell4;
         public int xp = 0;
         public int level = 1;
+        public int maxHealth = 3;
 
         public void Introduce()
         {
@@ -32,6 +33,7 @@ namespace WizardGame
                     break;
                 case "2":
                     health += 10*level;
+                    maxHealth = health;
                     string healthString = Convert.ToString(health);
                     Console.WriteLine(name + "'s health has been increased to " + healthString + "!");
                     break;

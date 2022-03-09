@@ -14,16 +14,22 @@ namespace WizardGame
                 CreateMonsters createMonsters = new CreateMonsters();
                 createMonsters.createMonsters_InitializeCombat(1,1);
             }
+            Console.WriteLine("Nice! You leveled up. You are now level 2.");
+            wizard1.IncreaseStats();
             while(wizard1.level == 2)
             {
                 CreateMonsters createMonsters = new CreateMonsters();
                 createMonsters.createMonsters_InitializeCombat(1, 2);
             }
+            Console.WriteLine("Nice! You leveled up. You are now level 3.");
+            wizard1.IncreaseStats();
             while (wizard1.level == 3)
             {
                 CreateMonsters createMonsters = new CreateMonsters();
                 createMonsters.createMonsters_InitializeCombat(1, 3);
             }
+            Console.WriteLine("Nice! You leveled up. You are now level 4.");
+            wizard1.IncreaseStats();
             while (wizard1.level == 4)
             {
                 CreateMonsters createMonsters = new CreateMonsters();
