@@ -19,7 +19,6 @@ namespace WizardGame
         public int damageDealt;
         public int damageTaken;
         public int spell;
-
         public Monster(Wizard wizard1, int lowestXp, int highestXp, int lowestDamage, int highestDamage, string monsterName, string monsterType, int health)
         {
             Wizard1 = wizard1;
@@ -60,23 +59,108 @@ namespace WizardGame
                 "They each do different damage based on which monster they are sent against.\n" +
                 "Press the corresponding button to which spell you mean to use!\n", MonsterName);
             spell = Convert.ToInt32(Console.ReadLine());
-            switch(MonsterType)
+            switch (MonsterType)
             {
                 case "Earth":
+                    while (true)
+                    {
 
+                        if (spell == 2)
+                        {
+                            damageTaken = Wizard1.attack * 3;
+                            Console.WriteLine("Nice, this spell does Triple Damage to {0} Monsters!\n" +
+                                "You dealt {1} damage to the {2}", MonsterType, damageTaken, MonsterName);
+
+                        }
+                        if (spell == 3 || spell == 1 || spell == 4)
+                        {
+                            damageTaken = Wizard1.attack;
+                            Console.WriteLine("Meh, you did ok; this spell does regular damage to {0} Monsters.\n" +
+                                "You dealt {1} damage to the {2}", MonsterType, damageTaken, MonsterName);
+                        }
+                        else
+                        {
+                            Console.WriteLine("You fool, you entered an invalid value.\n" +
+                                " Try again now, you dimwit.\n");
+                            continue;
+                        }
+                        break;
+                    }
                     break;
-
-
-
-
                 case "Air":
+                    while (true)
+                    {
 
+                        if (spell == 4)
+                        {
+                            damageTaken = Wizard1.attack * 3;
+                            Console.WriteLine("Nice, this spell does Triple Damage to {0} Monsters!\n" +
+                                "You dealt {1} damage to the {2}", MonsterType, damageTaken, MonsterName);
+                        }
+                        if (spell == 3 || spell == 1 || spell == 2)
+                        {
+                            damageTaken = Wizard1.attack;
+                            Console.WriteLine("Meh, you did ok; this spell does regular damage to {0} Monsters.\n" +
+                                "You dealt {1} damage to the {2}", MonsterType, damageTaken, MonsterName);
+                        }
+                        else
+                        {
+                            Console.WriteLine("You fool, you entered an invalid value.\n" +
+                                " Try again now, you dimwit.\n");
+                            continue;
+                        }
+                        break;
+                    }
                     break;
                 case "Water":
+                    while (true)
+                    {
 
+                        if (spell == 1)
+                        {
+                            damageTaken = Wizard1.attack * 3;
+                            Console.WriteLine("Nice, this spell does Triple Damage to {0} Monsters!\n" +
+                                "You dealt {1} damage to the {2}", MonsterType, damageTaken, MonsterName);
+                        }
+                        if (spell == 3 || spell == 4 || spell == 2)
+                        {
+                            damageTaken = Wizard1.attack;
+                            Console.WriteLine("Meh, you did ok; this spell does regular damage to {0} Monsters.\n" +
+                                "You dealt {1} damage to the {2}", MonsterType, damageTaken, MonsterName);
+                        }
+                        else
+                        {
+                            Console.WriteLine("You fool, you entered an invalid value.\n" +
+                                " Try again now, you dimwit.\n");
+                            continue;
+                        }
+                        break;
+                    }
                     break;
                 case "Fire":
+                    while (true)
+                    {
 
+                        if (spell == 3)
+                        {
+                            damageTaken = Wizard1.attack * 3;
+                            Console.WriteLine("Nice, this spell does Triple Damage to {0} Monsters!\n" +
+                                "You dealt {1} damage to the {2}", MonsterType, damageTaken, MonsterName);
+                        }
+                        if (spell == 4 || spell == 1 || spell == 2)
+                        {
+                            damageTaken = Wizard1.attack;
+                            Console.WriteLine("Meh, you did ok; this spell does regular damage to {0} Monsters.\n" +
+                                "You dealt {1} damage to the {2}", MonsterType, damageTaken, MonsterName);
+                        }
+                        else
+                        {
+                            Console.WriteLine("You fool, you entered an invalid value.\n" +
+                                " Try again now, you dimwit.\n");
+                            continue;
+                        }
+                        break;
+                    }
                     break;
             }
         }

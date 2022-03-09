@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\nedfp\\OneDrive\\Desktop\\Ned\\Programming\\C#\\C# terminal game\\C# terminal game\\Wizard Game\\Wizard Game\\Wizard Game.csproj": {}
+    "C:\\Users\\nedfp\\OneDrive\\Desktop\\Ned\\Happy Electron\\C#\\C-terminal-game\\Wizard Game\\Wizard Game\\Wizard Game.csproj": {}
   },
   "projects": {
-    "C:\\Users\\nedfp\\OneDrive\\Desktop\\Ned\\Programming\\C#\\C# terminal game\\C# terminal game\\Wizard Game\\Wizard Game\\Wizard Game.csproj": {
+    "C:\\Users\\nedfp\\OneDrive\\Desktop\\Ned\\Happy Electron\\C#\\C-terminal-game\\Wizard Game\\Wizard Game\\Wizard Game.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\nedfp\\OneDrive\\Desktop\\Ned\\Programming\\C#\\C# terminal game\\C# terminal game\\Wizard Game\\Wizard Game\\Wizard Game.csproj",
+        "projectUniqueName": "C:\\Users\\nedfp\\OneDrive\\Desktop\\Ned\\Happy Electron\\C#\\C-terminal-game\\Wizard Game\\Wizard Game\\Wizard Game.csproj",
         "projectName": "Wizard Game",
-        "projectPath": "C:\\Users\\nedfp\\OneDrive\\Desktop\\Ned\\Programming\\C#\\C# terminal game\\C# terminal game\\Wizard Game\\Wizard Game\\Wizard Game.csproj",
+        "projectPath": "C:\\Users\\nedfp\\OneDrive\\Desktop\\Ned\\Happy Electron\\C#\\C-terminal-game\\Wizard Game\\Wizard Game\\Wizard Game.csproj",
         "packagesPath": "C:\\Users\\nedfp\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\nedfp\\OneDrive\\Desktop\\Ned\\Programming\\C#\\C# terminal game\\C# terminal game\\Wizard Game\\Wizard Game\\obj\\",
+        "outputPath": "C:\\Users\\nedfp\\OneDrive\\Desktop\\Ned\\Happy Electron\\C#\\C-terminal-game\\Wizard Game\\Wizard Game\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\nedfp\\AppData\\Roaming\\NuGet\\NuGet.Config",

@@ -21,19 +21,23 @@ namespace WizardGame
         public void IncreaseStats()
         {
             Console.WriteLine("Pick one to invest in: (1) Attack, (2) Health\n");
-            byte tutAtrib = Convert.ToByte(Console.ReadLine());
+            string tutAtrib = Console.ReadLine();
             Console.WriteLine();
             switch (tutAtrib)
             {
-                case 1:
+                case "1":
                     attack += 5*level;
                     string attackString = Convert.ToString(attack);
                     Console.WriteLine(name + "'s attack has been increased to " + attackString + "!");
                     break;
-                case 2:
+                case "2":
                     health += 10*level;
                     string healthString = Convert.ToString(health);
                     Console.WriteLine(name + "'s health has been increased to " + healthString + "!");
+                    break;
+                default:
+                    Console.WriteLine("It seems you did not enter a valid option, so you get no bonus. " +
+                        "\nSucks to suck");
                     break;
             }
         } 
