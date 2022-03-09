@@ -9,7 +9,7 @@ namespace WizardGame
         static void Main(string[] args)
         {
             tutorial.Tutorial();
-            while(wizard1.level == 1)
+            while (wizard1.level == 1)
             {
                 CreateMonsters createMonsters = new CreateMonsters();
                 createMonsters.createMonsters_InitializeCombat(1,1);
@@ -29,6 +29,8 @@ namespace WizardGame
                 CreateMonsters createMonsters = new CreateMonsters();
                 createMonsters.createMonsters_InitializeCombat(1, 4);
             }
+            EndGame endGame = new EndGame();
+            endGame.function();
         }
     }
 }

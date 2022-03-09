@@ -80,3 +80,18 @@ C:\Users\nedfp\OneDrive\Desktop\Ned\Happy Electron\C#\C-terminal-game\Wizard Gam
 C:\Users\nedfp\OneDrive\Desktop\Ned\Happy Electron\C#\C-terminal-game\Wizard Game\Wizard Game\obj\Debug\net6.0\Wizard Game.pdb
 C:\Users\nedfp\OneDrive\Desktop\Ned\Happy Electron\C#\C-terminal-game\Wizard Game\Wizard Game\obj\Debug\net6.0\Wizard Game.genruntimeconfig.cache
 C:\Users\nedfp\OneDrive\Desktop\Ned\Happy Electron\C#\C-terminal-game\Wizard Game\Wizard Game\obj\Debug\net6.0\ref\Wizard Game.dll
+C:\Users\tamam\Documents\GitHub\C-terminal-game\Wizard Game\Wizard Game\obj\Debug\net6.0\Wizard Game.csproj.AssemblyReference.cache
+C:\Users\tamam\Documents\GitHub\C-terminal-game\Wizard Game\Wizard Game\obj\Debug\net6.0\Wizard Game.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\tamam\Documents\GitHub\C-terminal-game\Wizard Game\Wizard Game\obj\Debug\net6.0\Wizard Game.AssemblyInfoInputs.cache
+C:\Users\tamam\Documents\GitHub\C-terminal-game\Wizard Game\Wizard Game\obj\Debug\net6.0\Wizard Game.AssemblyInfo.cs
+C:\Users\tamam\Documents\GitHub\C-terminal-game\Wizard Game\Wizard Game\obj\Debug\net6.0\Wizard Game.csproj.CoreCompileInputs.cache
+C:\Users\tamam\Documents\GitHub\C-terminal-game\Wizard Game\Wizard Game\obj\Debug\net6.0\Wizard Game.dll
+C:\Users\tamam\Documents\GitHub\C-terminal-game\Wizard Game\Wizard Game\obj\Debug\net6.0\ref\Wizard Game.dll
+C:\Users\tamam\Documents\GitHub\C-terminal-game\Wizard Game\Wizard Game\obj\Debug\net6.0\Wizard Game.pdb
+C:\Users\tamam\Documents\GitHub\C-terminal-game\Wizard Game\Wizard Game\bin\Debug\net6.0\Wizard Game.exe
+C:\Users\tamam\Documents\GitHub\C-terminal-game\Wizard Game\Wizard Game\bin\Debug\net6.0\Wizard Game.deps.json
+C:\Users\tamam\Documents\GitHub\C-terminal-game\Wizard Game\Wizard Game\bin\Debug\net6.0\Wizard Game.runtimeconfig.json
+C:\Users\tamam\Documents\GitHub\C-terminal-game\Wizard Game\Wizard Game\bin\Debug\net6.0\Wizard Game.dll
+C:\Users\tamam\Documents\GitHub\C-terminal-game\Wizard Game\Wizard Game\bin\Debug\net6.0\ref\Wizard Game.dll
+C:\Users\tamam\Documents\GitHub\C-terminal-game\Wizard Game\Wizard Game\bin\Debug\net6.0\Wizard Game.pdb
+C:\Users\tamam\Documents\GitHub\C-terminal-game\Wizard Game\Wizard Game\obj\Debug\net6.0\Wizard Game.genruntimeconfig.cache
