@@ -20,7 +20,7 @@ namespace WizardGame
             Console.WriteLine("\nAttack is the amount of damage your wizard does to an enemy.");
             Console.WriteLine("Health is the amount of damage your wizard can take before it dies.");
             Console.WriteLine("Currntly you have four spells. Different spells are effective against different enemies.");
-            Console.WriteLine("As you use spells against enemies, you will be able to check how effective it was after use, or later in the journal.");
+            Console.WriteLine("As you use spells, you will be able to check how effective it was after use.");
             Console.WriteLine("It's time to fight your first enemy, a goblin! When you are ready, press enter.\n");
             Console.ReadLine();
             Console.WriteLine("\nYou are attacked by a goblin!");
@@ -29,6 +29,19 @@ namespace WizardGame
             Console.WriteLine("Yowzers! You beat the goblin!\nNow you will enter the main game. Press any key to continue.");
             Console.ReadLine();
             Console.ForegroundColor = ConsoleColor.White;
+
+            switch ()
+            {
+                case 1;
+
+
+            }
+
+
+
+
+
+               
         }
     }
 }
