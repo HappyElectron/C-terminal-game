@@ -16,12 +16,12 @@ namespace WizardGame
             Monster dragon = new Monster(wizard1, 20, 40, 10, 20, "Dragon", "Fire", 30);
             Random rand = new Random();
             whichMonster = rand.Next(lowerMonster, upperMonster);
-            Console.WriteLine("\nYour Health has been reset.\n\nYou are approached by a {0}, and it means to attack you!\n", monsterType);
             switch (whichMonster)
             {
                 case 1:
                     while (goblin.Health > 0 && wizard1.health > 0)
                     {
+                        Console.WriteLine("\nYour Health has been reset.\n\nYou are approached by a {0}, and it means to attack you!\n", goblin.MonsterName);
                         goblin.Attack();
                         goblin.TakeDamage();
                         if(goblin.Health <= 0)
@@ -38,6 +38,7 @@ namespace WizardGame
                 case 2:
                     while (bigAngryBird.Health > 0 && wizard1.health > 0)
                     {
+                        Console.WriteLine("\nYour Health has been reset.\n\nYou are approached by a {0}, and it means to attack you!\n", bigAngryBird.MonsterName);
                         bigAngryBird.Attack();
                         bigAngryBird.TakeDamage();
                         if (bigAngryBird.Health <= 0)
@@ -54,6 +55,7 @@ namespace WizardGame
                 case 3:
                     while (seaSerpent.Health > 0 && wizard1.health > 0)
                     {
+                        Console.WriteLine("\nYour Health has been reset.\n\nYou are approached by a {0}, and it means to attack you!\n", seaSerpent.MonsterName);
                         seaSerpent.Attack();
                         seaSerpent.TakeDamage();
                         if (seaSerpent.Health <= 0)
@@ -70,6 +72,7 @@ namespace WizardGame
                 case 4:
                     while (dragon.Health > 0 && wizard1.health > 0)
                     {
+                        Console.WriteLine("\nYour Health has been reset.\n\nYou are approached by a {0}, and it means to attack you!\n", dragon.MonsterName);
                         dragon.Attack();
                         dragon.TakeDamage();
                         if (dragon.Health <= 0)
