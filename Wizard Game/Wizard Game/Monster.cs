@@ -88,7 +88,6 @@ namespace WizardGame
                                 " Try again now, you dimwit.\n");
                             continue;
                         }
-                        break;
                     }
                     break;
                 case "Air":
