@@ -16,7 +16,7 @@ namespace WizardGame
 
         public void Introduce()
         {
-            Console.WriteLine("Your wizard's name is " + name + ".");
+            Console.WriteLine("Name: " + name + ".");
         }
         public void IncreaseStats()
         {

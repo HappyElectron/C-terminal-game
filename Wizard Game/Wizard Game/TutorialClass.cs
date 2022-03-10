@@ -8,6 +8,7 @@ namespace WizardGame
 
         public void Tutorial()
         {
+            Console.ForegroundColor = ConsoleColor.Green;
             Console.WriteLine("Welcome to Wizard Game!\n");
             Console.WriteLine("Time to create a wizard.");
             Console.WriteLine("What will be your wizard's name?\n");
@@ -27,6 +28,7 @@ namespace WizardGame
             Console.ReadLine();
             Console.WriteLine("Yowzers! You beat the goblin!\nNow you will enter the main game. Press any key to continue.");
             Console.ReadLine();
+            Console.ForegroundColor = ConsoleColor.White;
         }
     }
 }
