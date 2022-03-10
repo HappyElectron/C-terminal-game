@@ -30,10 +30,6 @@ namespace WizardGame
             MonsterType = monsterType;
             Health = health;
         }
-        public void Introduce()
-        {
-            Console.WriteLine("A {0} approaches you! \nIt is a {1} monster, and is suspectable to damge from {2} spells! \nFrom these spells, it will take twice as much damage as it ordinarily would.", MonsterName, MonsterType, "!!!filler value!!!");
-        }
         public void Attack()
         {
             Random rand = new Random();
