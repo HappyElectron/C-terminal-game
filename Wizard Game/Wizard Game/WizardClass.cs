@@ -8,13 +8,9 @@ namespace WizardGame
         public static Wizard wizard1 = tutorial.wizard1;
         public string name;
         public int attackLevel = 1;
-        public int attack = 0;
+        public int attack = 1;
         public int healthLevel = 1;
-        public int health = 0;
-        public string spell1;
-        public string spell2;
-        public string spell3;
-        public string spell4;
+        public int health = 1;
         public int xp = 0;
         public int level = 1;
         public int maxHealth = 0;
