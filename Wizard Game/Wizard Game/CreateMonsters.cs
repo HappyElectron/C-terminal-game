@@ -8,30 +8,8 @@ namespace WizardGame
         static TutorialClass tutorial = Program.tutorial;
         static Wizard wizard1 = tutorial.wizard1;
         public string monsterType;
-        public int xpGained;
-        public int xpReq;
-        public int xpReqLvl;
-        public int nextLevel;
         public void Combat(Monster monster)
         {
-            wizard1.health = 10 * wizard1.healthLevel;
-            wizard1.attack = 5 * wizard1.attackLevel;
-            wizard1.maxHealth = 10 * wizard1.healthLevel;
-            switch (wizard1.level)
-            {
-                case 1:
-                    xpReq = 10;
-                    break;
-                case 2:
-                    xpReq = 30;
-                    break;
-                case 3:
-                    xpReq = 70;
-                    break;
-                case 4:
-                    xpReq = 120;
-                    break;
-            }
             Console.WriteLine("\n\nYou are approached by a {0}, and it means to attack you!\n", monster.MonsterName);
             while (monster.Health > 0 && wizard1.health > 0)
             {
@@ -42,38 +20,20 @@ namespace WizardGame
                 {
                     Console.WriteLine("\nYour Health has been reset.");
                     wizard1.health = wizard1.maxHealth;
-                    xpGained = rand.Next(monster.LowestXp, monster.HighestXp);
-                    wizard1.xp += xpGained;
-                    if (wizard1.xp > xpReq)
+                    wizard1.xp += rand.Next(monster.LowestXp, monster.HighestXp);
+                    if (wizard1.xp > 6 * wizard1.level)
                     {
                         wizard1.level++;
-                        Console.WriteLine("Congratulations! " + wizard1.name + " has levelled up to level " + wizard1.level + "!\nYou may now choose a skill to level up!");
-                        wizard1.IncreaseStats();
-                        switch (wizard1.level)
-                        {
-                            case 1:
-                                xpReq = 10;
-                                break;
-                            case 2:
-                                xpReq = 50;
-                                break;
-                            case 3:
-                                xpReq = 70;
-                                break;
-                            case 4:
-                                xpReq = 120;
-                                break;
-                        }
                     }
                 }
             }
         }
         public void createMonsters_InitializeCombat(int lowerMonster, int upperMonster)
         {
-            Monster goblin = new Monster(1, 5, 1, 3, "Goblin", "Earth", 3);
-            Monster bigAngryBird = new Monster(3, 7, 3, 7, "Big Angry Bird", "Air", 7);
-            Monster seaSerpent = new Monster(5, 10, 5, 7, "Sea Serpent", "Water", 15);
-            Monster dragon = new Monster(10, 20, 10, 20, "Dragon", "Fire", 30);
+            Monster goblin = new Monster(wizard1, 1, 5, 1, 3, "Goblin", "Earth", 3);
+            Monster bigAngryBird = new Monster(wizard1, 3, 7, 3, 7, "Big Angry Bird", "Air", 7);
+            Monster seaSerpent = new Monster(wizard1, 5, 10, 5, 7, "Sea Serpent", "Water", 15);
+            Monster dragon = new Monster(wizard1, 10, 20, 10, 20, "Dragon", "Fire", 30);
             Random rand = new Random();
             whichMonster = rand.Next(lowerMonster, upperMonster);
             switch (whichMonster)
@@ -91,10 +51,8 @@ namespace WizardGame
                     Combat(dragon);
                     break;
             }
-            xpReqLvl = xpReq - wizard1.xp;
-            nextLevel = wizard1.level + 1;
-            Console.WriteLine("Yowza! You beat the monster!\nYou received " + xpGained + " experience from the monster.\nThis means " + wizard1.name + " needs " + xpReqLvl + " experience to get to level " + nextLevel + ".\nPress any button to fight the next enemy:");
-            Console.ReadLine();
+            Console.WriteLine("Yowza! You beat the monster! it has no more health. \n" +
+                "You're pretty groovy!");
         }
     }
 }
