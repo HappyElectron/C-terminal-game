@@ -8,6 +8,26 @@ namespace WizardGame
         static TutorialClass tutorial = Program.tutorial;
         static Wizard wizard1 = tutorial.wizard1;
         public string monsterType;
+        public void Combat(Monster monster)
+        {
+            Console.WriteLine("\n\nYou are approached by a {0}, and it means to attack you!\n", monster.MonsterName);
+            while (monster.Health > 0 && wizard1.health > 0)
+            {
+                Random rand = new Random();
+                monster.Attack();
+                monster.TakeDamage();
+                if (monster.Health <= 0)
+                {
+                    Console.WriteLine("\nYour Health has been reset.");
+                    wizard1.health = wizard1.maxHealth;
+                    wizard1.xp += rand.Next(monster.LowestXp, monster.HighestXp);
+                    if (wizard1.xp > 6 * wizard1.level)
+                    {
+                        wizard1.level++;
+                    }
+                }
+            }
+        }
         public void createMonsters_InitializeCombat(int lowerMonster, int upperMonster)
         {
             Monster goblin = new Monster(wizard1, 1, 5, 1, 3, "Goblin", "Earth", 3);
@@ -19,76 +39,16 @@ namespace WizardGame
             switch (whichMonster)
             {
                 case 1:
-                    while (goblin.Health > 0 && wizard1.health > 0)
-                    {
-                        Console.WriteLine("\n\nYou are approached by a {0}, and it means to attack you!\n", goblin.MonsterName);
-                        goblin.Attack();
-                        goblin.TakeDamage();
-                        if(goblin.Health <= 0)
-                        {
-                            Console.WriteLine("\nYour Health has been reset.");
-                            wizard1.health = wizard1.maxHealth;
-                            wizard1.xp += rand.Next(goblin.LowestXp, goblin.HighestXp);
-                            if(wizard1.xp > 6*wizard1.level)
-                            {
-                                wizard1.level++;
-                            }
-                        }
-                    }
+                    Combat(goblin);
                     break;
                 case 2:
-                    while (bigAngryBird.Health > 0 && wizard1.health > 0)
-                    {
-                        Console.WriteLine("\n\nYou are approached by a {0}, and it means to attack you!\n", bigAngryBird.MonsterName);
-                        bigAngryBird.Attack();
-                        bigAngryBird.TakeDamage();
-                        if (bigAngryBird.Health <= 0)
-                        {
-                            wizard1.health = wizard1.maxHealth;
-                            wizard1.xp += rand.Next(bigAngryBird.LowestXp, bigAngryBird.HighestXp);
-                            Console.WriteLine("\nYour Health has been reset.");
-                            if (wizard1.xp > 6 * wizard1.level)
-                            {
-                                wizard1.level++;
-                            }
-                        }
-                    }
+                    Combat(bigAngryBird);
                     break;
                 case 3:
-                    while (seaSerpent.Health > 0 && wizard1.health > 0)
-                    {
-                        Console.WriteLine("\n\nYou are approached by a {0}, and it means to attack you!\n", seaSerpent.MonsterName);
-                        seaSerpent.Attack();
-                        seaSerpent.TakeDamage();
-                        if (seaSerpent.Health <= 0)
-                        {
-                            Console.WriteLine("\nYour Health has been reset.");
-                            wizard1.health = wizard1.maxHealth;
-                            wizard1.xp += rand.Next(seaSerpent.LowestXp, seaSerpent.HighestXp);
-                            if (wizard1.xp > 6 * wizard1.level)
-                            {
-                                wizard1.level++;
-                            }
-                        }
-                    }
+                    Combat(seaSerpent);
                     break;
                 case 4:
-                    while (dragon.Health > 0 && wizard1.health > 0)
-                    {
-                        Console.WriteLine("\n\nYou are approached by a {0}, and it means to attack you!\n", dragon.MonsterName);
-                        dragon.Attack();
-                        dragon.TakeDamage();
-                        if (dragon.Health <= 0)
-                        {
-                            wizard1.health = wizard1.maxHealth;
-                            wizard1.xp += rand.Next(dragon.LowestXp, dragon.HighestXp);
-                            Console.WriteLine("\nYour Health has been reset.");
-                            if (wizard1.xp > 6 * wizard1.level)
-                            {
-                                wizard1.level++;
-                            }
-                        }
-                    }
+                    Combat(dragon);
                     break;
             }
             Console.WriteLine("Yowza! You beat the monster! it has no more health. \n" +
