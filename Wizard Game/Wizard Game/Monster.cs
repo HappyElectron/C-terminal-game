@@ -8,7 +8,8 @@ namespace WizardGame
 {
     public class Monster
     {
-        public Wizard Wizard1 { get; set; }
+        public static TutorialClass tutorial = new TutorialClass();
+        public static Wizard wizard1 = tutorial.wizard1;
         public int Health { get; set; }
         public int LowestXp { get; set; }
         public int HighestXp { get; set; }   
@@ -19,9 +20,9 @@ namespace WizardGame
         public int damageDealt;
         public int damageTaken;
         public int spell;
-        public Monster(Wizard wizard1, int lowestXp, int highestXp, int lowestDamage, int highestDamage, string monsterName, string monsterType, int health)
+        public int playerHealth;
+        public Monster(int lowestXp, int highestXp, int lowestDamage, int highestDamage, string monsterName, string monsterType, int health)
         {
-            Wizard1 = wizard1;
             LowestXp = lowestXp;
             HighestXp = highestXp;
             LowestDamage = lowestDamage;
@@ -32,17 +33,19 @@ namespace WizardGame
         }
         public void Attack()
         {
+            playerHealth = 10 * wizard1.healthLevel;
+            Console.WriteLine(playerHealth + ", " + wizard1.healthLevel);
             Random rand = new Random();
             damageDealt = rand.Next(LowestDamage, HighestDamage);
-            Wizard1.health = Wizard1.health - damageDealt;
+            playerHealth = playerHealth - damageDealt;
             Console.WriteLine("The {0} attacks! It deals {1} damage!" +
-                "\nYour Wizard now has {2} health remaining.", MonsterName, damageDealt, Wizard1.health);
-            if (Wizard1.health <= 0)
+                "\nYour Wizard now has {2} health remaining.", MonsterName, damageDealt, playerHealth);
+            if (playerHealth <= 0)
             {
                 Console.WriteLine("You lose, fool. Your health is all gone." +
                     "\nYou were slain by a {0} and the game is now over.\n\nBad", MonsterName);
                 Thread.Sleep(1000);
-                Console.WriteLine("I do not know how to make the application quit from here so you're in an infinite loop now.");
+                Console.WriteLine("Please close the application. You are not very good at this game.");
                 while (true)
                 {}//leave user in a loop till they shut the app
             }
@@ -62,7 +65,7 @@ namespace WizardGame
 
                         if (spell == 2)
                         {
-                            damageTaken = Wizard1.attack * 3;
+                            damageTaken = wizard1.attack * 3;
                             Health -= damageTaken;
                             Console.WriteLine("Nice, this spell does Triple Damage to {0} Monsters!\n" +
                                 "You dealt {1} damage to the {2}\n" +
@@ -71,7 +74,7 @@ namespace WizardGame
                         }
                         if (spell == 3 || spell == 1 || spell == 4)
                         {
-                            damageTaken = Wizard1.attack;
+                            damageTaken = wizard1.attack;
                             Console.WriteLine("Meh, you did ok; this spell does regular damage to {0} Monsters.\n" +
                                 "You dealt {1} damage to the {2}", MonsterType, damageTaken, MonsterName);
                             Health -= damageTaken;
@@ -92,7 +95,7 @@ namespace WizardGame
 
                         if (spell == 4)
                         {
-                            damageTaken = Wizard1.attack * 3;
+                            damageTaken = wizard1.attack * 3;
                             Console.WriteLine("Nice, this spell does Triple Damage to {0} Monsters!\n" +
                                 "You dealt {1} damage to the {2}", MonsterType, damageTaken, MonsterName);
                             Health -= damageTaken;
@@ -100,7 +103,7 @@ namespace WizardGame
                         }
                         if (spell == 3 || spell == 1 || spell == 2)
                         {
-                            damageTaken = Wizard1.attack;
+                            damageTaken = wizard1.attack;
                             Console.WriteLine("Meh, you did ok; this spell does regular damage to {0} Monsters.\n" +
                                 "You dealt {1} damage to the {2}", MonsterType, damageTaken, MonsterName);
                             Health -= damageTaken;
@@ -121,7 +124,7 @@ namespace WizardGame
 
                         if (spell == 1)
                         {
-                            damageTaken = Wizard1.attack * 3;
+                            damageTaken = wizard1.attack * 3;
                             Console.WriteLine("Nice, this spell does Triple Damage to {0} Monsters!\n" +
                                 "You dealt {1} damage to the {2}", MonsterType, damageTaken, MonsterName);
                             Health -= damageTaken;
@@ -129,7 +132,7 @@ namespace WizardGame
                         }
                         if (spell == 3 || spell == 4 || spell == 2)
                         {
-                            damageTaken = Wizard1.attack;
+                            damageTaken = wizard1.attack;
                             Console.WriteLine("Meh, you did ok; this spell does regular damage to {0} Monsters.\n" +
                                 "You dealt {1} damage to the {2}", MonsterType, damageTaken, MonsterName);
                             Health -= damageTaken;
@@ -150,7 +153,7 @@ namespace WizardGame
 
                         if (spell == 3)
                         {
-                            damageTaken = Wizard1.attack * 3;
+                            damageTaken = wizard1.attack * 3;
                             Console.WriteLine("Nice, this spell does Triple Damage to {0} Monsters!\n" +
                                 "You dealt {1} damage to the {2}", MonsterType, damageTaken, MonsterName);
                             Health -= damageTaken;
@@ -158,7 +161,7 @@ namespace WizardGame
                         }
                         if (spell == 4 || spell == 1 || spell == 2)
                         {
-                            damageTaken = Wizard1.attack;
+                            damageTaken = wizard1.attack;
                             Console.WriteLine("Meh, you did ok; this spell does regular damage to {0} Monsters.\n" +
                                 "You dealt {1} damage to the {2}", MonsterType, damageTaken, MonsterName);
                             Health -= damageTaken;
