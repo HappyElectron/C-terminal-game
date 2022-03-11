@@ -4,16 +4,16 @@ namespace WizardGame
 {
     public class Wizard
     {
+        public static TutorialClass tutorial = new TutorialClass();
+        public static Wizard wizard1 = tutorial.wizard1;
         public string name;
-        public int attack = 2;
-        public int health = 3;
-        public string spell1;
-        public string spell2;
-        public string spell3;
-        public string spell4;
+        public int attackLevel = 1;
+        public int attack = 1;
+        public int healthLevel = 1;
+        public int health = 1;
         public int xp = 0;
         public int level = 1;
-        public int maxHealth = 3;
+        public int maxHealth = 0;
 
         public void Introduce()
         {
@@ -27,15 +27,18 @@ namespace WizardGame
             switch (tutAtrib)
             {
                 case "1":
-                    attack += 5*level;
+                    wizard1.attackLevel++;
+                    attack = 5*wizard1.attackLevel;
+                    string attackLevelString = Convert.ToString(wizard1.attackLevel);
                     string attackString = Convert.ToString(attack);
-                    Console.WriteLine(name + "'s attack has been increased to " + attackString + "!");
+                    Console.WriteLine(name + "'s attack level has been increased to " + attackLevelString + "!\nThis means " + name + " now does " + attackString + " base damage.");
                     break;
                 case "2":
-                    health += 10*level;
-                    maxHealth = health;
+                    wizard1.healthLevel++;
+                    health = 10 * wizard1.healthLevel;
+                    string healthLevelString = Convert.ToString(wizard1.healthLevel);
                     string healthString = Convert.ToString(health);
-                    Console.WriteLine(name + "'s health has been increased to " + healthString + "!");
+                    Console.WriteLine(name + "'s health level has been increased to " + healthLevelString + "!\nThis means " + name + " now has " + healthString + " health points.");
                     break;
                 default:
                     Console.WriteLine("It seems you did not enter a valid option, so you get no bonus. " +
