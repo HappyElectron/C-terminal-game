@@ -110,3 +110,11 @@ C:\Users\nedfp\OneDrive\Desktop\Ned\Programming\C#\C# terminal game\C# terminal 
 C:\Users\nedfp\OneDrive\Desktop\Ned\Programming\C#\C# terminal game\C# terminal game\Wizard Game\Wizard Game\obj\Debug\net6.0\Wizard Game.pdb
 C:\Users\nedfp\OneDrive\Desktop\Ned\Programming\C#\C# terminal game\C# terminal game\Wizard Game\Wizard Game\obj\Debug\net6.0\Wizard Game.genruntimeconfig.cache
 C:\Users\nedfp\OneDrive\Desktop\Ned\Programming\C#\C# terminal game\C# terminal game\Wizard Game\Wizard Game\obj\Debug\net6.0\ref\Wizard Game.dll
+C:\Users\nedfp\Documents\GitHub\C-terminal-game\Wizard Game\Wizard Game\bin\Debug\net6.0\Wizard Game.exe
+C:\Users\nedfp\Documents\GitHub\C-terminal-game\Wizard Game\Wizard Game\bin\Debug\net6.0\Wizard Game.deps.json
+C:\Users\nedfp\Documents\GitHub\C-terminal-game\Wizard Game\Wizard Game\bin\Debug\net6.0\Wizard Game.runtimeconfig.json
+C:\Users\nedfp\Documents\GitHub\C-terminal-game\Wizard Game\Wizard Game\bin\Debug\net6.0\Wizard Game.dll
+C:\Users\nedfp\Documents\GitHub\C-terminal-game\Wizard Game\Wizard Game\bin\Debug\net6.0\Wizard Game.pdb
+C:\Users\nedfp\Documents\GitHub\C-terminal-game\Wizard Game\Wizard Game\obj\Debug\net6.0\refint\Wizard Game.dll
+C:\Users\nedfp\Documents\GitHub\C-terminal-game\Wizard Game\Wizard Game\obj\Debug\net6.0\Wizard Game.genruntimeconfig.cache
+C:\Users\nedfp\Documents\GitHub\C-terminal-game\Wizard Game\Wizard Game\obj\Debug\net6.0\ref\Wizard Game.dll

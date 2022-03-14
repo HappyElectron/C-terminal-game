@@ -8,7 +8,7 @@ namespace WizardGame
 {
     public class Monster
     {
-        public static TutorialClass tutorial = new TutorialClass();
+        public static TutorialClass tutorial = Program.tutorial;
         public static Wizard wizard1 = tutorial.wizard1;
         public int Health { get; set; }
         public int LowestXp { get; set; }
@@ -33,14 +33,12 @@ namespace WizardGame
         }
         public void Attack()
         {
-            playerHealth = 10 * wizard1.healthLevel;
-            Console.WriteLine(playerHealth + ", " + wizard1.healthLevel);
             Random rand = new Random();
             damageDealt = rand.Next(LowestDamage, HighestDamage);
-            playerHealth = playerHealth - damageDealt;
+            wizard1.health = wizard1.health - damageDealt;
             Console.WriteLine("The {0} attacks! It deals {1} damage!" +
-                "\nYour Wizard now has {2} health remaining.", MonsterName, damageDealt, playerHealth);
-            if (playerHealth <= 0)
+                "\nYour Wizard now has {2} health remaining.", MonsterName, damageDealt, wizard1.health);
+            if (wizard1.health <= 0)
             {
                 Console.WriteLine("You lose, fool. Your health is all gone." +
                     "\nYou were slain by a {0} and the game is now over.\n\nBad", MonsterName);

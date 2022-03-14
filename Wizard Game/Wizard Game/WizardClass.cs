@@ -4,7 +4,7 @@ namespace WizardGame
 {
     public class Wizard
     {
-        public static TutorialClass tutorial = new TutorialClass();
+        public static TutorialClass tutorial = Program.tutorial;
         public static Wizard wizard1 = tutorial.wizard1;
         public string name;
         public int attackLevel = 1;
@@ -28,17 +28,17 @@ namespace WizardGame
             {
                 case "1":
                     wizard1.attackLevel++;
-                    attack = 5*wizard1.attackLevel;
+                    wizard1.attack = 5* wizard1.attackLevel;
                     string attackLevelString = Convert.ToString(wizard1.attackLevel);
-                    string attackString = Convert.ToString(attack);
+                    string attackString = Convert.ToString(wizard1.attack);
                     Console.WriteLine(name + "'s attack level has been increased to " + attackLevelString + "!\nThis means " + name + " now does " + attackString + " base damage.");
                     break;
                 case "2":
-                    wizard1.healthLevel++;
-                    health = 10 * wizard1.healthLevel;
+                    wizard1.healthLevel = wizard1.healthLevel +1;
+                    wizard1.health = wizard1.healthLevel * 10;
                     string healthLevelString = Convert.ToString(wizard1.healthLevel);
-                    string healthString = Convert.ToString(health);
-                    Console.WriteLine(name + "'s health level has been increased to " + healthLevelString + "!\nThis means " + name + " now has " + healthString + " health points.");
+                    string healthString = Convert.ToString(wizard1.health);
+                    Console.WriteLine(name + "'s health level has been increased to " + healthLevelString + "!\nThis means " + name + " now has {0} health points.",wizard1.health);
                     break;
                 default:
                     Console.WriteLine("It seems you did not enter a valid option, so you get no bonus. " +

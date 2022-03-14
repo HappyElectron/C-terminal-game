@@ -14,9 +14,6 @@ namespace WizardGame
         public int nextLevel;
         public void Combat(Monster monster)
         {
-            wizard1.health = 10 * wizard1.healthLevel;
-            wizard1.attack = 5 * wizard1.attackLevel;
-            wizard1.maxHealth = 10 * wizard1.healthLevel;
             switch (wizard1.level)
             {
                 case 1:
@@ -33,6 +30,7 @@ namespace WizardGame
                     break;
             }
             Console.WriteLine("\n\nYou are approached by a {0}, and it means to attack you!\n", monster.MonsterName);
+            wizard1.health = wizard1.healthLevel * 10;
             while (monster.Health > 0 && wizard1.health > 0)
             {
                 Random rand = new Random();
@@ -41,7 +39,7 @@ namespace WizardGame
                 if (monster.Health <= 0)
                 {
                     Console.WriteLine("\nYour Health has been reset.");
-                    wizard1.health = wizard1.maxHealth;
+                    wizard1.health = 10 * wizard1.healthLevel;
                     xpGained = rand.Next(monster.LowestXp, monster.HighestXp);
                     wizard1.xp += xpGained;
                     if (wizard1.xp > xpReq)
