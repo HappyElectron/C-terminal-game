@@ -54,7 +54,6 @@ namespace WizardGame
                 "You may choose of 4 spells, (1) Earth, (2) Air, (3) Later, or (4) Fire. \n" +
                 "They each do different damage based on which monster they are sent against.\n" +
                 "Press the corresponding button to which spell you mean to use!\n", MonsterName);
-            spell = Convert.ToInt32(Console.ReadLine());
             try
             {
                 spell = Convert.ToInt32(Console.ReadLine());

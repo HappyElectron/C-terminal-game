@@ -73,7 +73,7 @@ namespace WizardGame
             Monster seaSerpent = new Monster(5, 10, 5, 7, "Sea Serpent", "Water", 15);
             Monster dragon = new Monster(10, 20, 10, 20, "Dragon", "Fire", 30);
             Random rand = new Random();
-            whichMonster = rand.Next(1, wizard1.level);
+            whichMonster = rand.Next(1, wizard1.level + 1);
             switch (whichMonster)
             {
                 case 1:
