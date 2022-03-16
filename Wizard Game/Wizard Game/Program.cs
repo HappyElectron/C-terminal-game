@@ -9,13 +9,15 @@ namespace WizardGame
         static void Main(string[] args)
         {
             tutorial.Tutorial();
-            for(int i = 1; i <= 4; i++)
+            while (true)
             {
-                while (wizard1.level == i)
+                if (wizard1.level > 4)
                 {
-                    CreateMonsters createMonsters = new CreateMonsters();
-                    createMonsters.createMonsters_InitializeCombat(1, i);
+                    EndGame endgame = new EndGame();
+                    endgame.function();
                 }
+                CreateMonsters createMonsters = new CreateMonsters();
+                createMonsters.createMonsters_InitializeCombat();
             }
         }
     }

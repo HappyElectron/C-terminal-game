@@ -66,14 +66,14 @@ namespace WizardGame
                 }
             }
         }
-        public void createMonsters_InitializeCombat(int lowerMonster, int upperMonster)
+        public void createMonsters_InitializeCombat()
         {
             Monster goblin = new Monster(1, 5, 1, 3, "Goblin", "Earth", 3);
             Monster bigAngryBird = new Monster(3, 7, 3, 7, "Big Angry Bird", "Air", 7);
             Monster seaSerpent = new Monster(5, 10, 5, 7, "Sea Serpent", "Water", 15);
             Monster dragon = new Monster(10, 20, 10, 20, "Dragon", "Fire", 30);
             Random rand = new Random();
-            whichMonster = rand.Next(lowerMonster, upperMonster);
+            whichMonster = rand.Next(1, wizard1.level);
             switch (whichMonster)
             {
                 case 1:
