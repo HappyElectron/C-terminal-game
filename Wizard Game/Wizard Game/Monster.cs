@@ -51,10 +51,20 @@ namespace WizardGame
         public void TakeDamage()
         {
             Console.WriteLine("Now it's your turn! You may attack the {0}.\n" +
-                "You may choose of 4 spells, 'earth', 'air', 'water' or 'fire'. \n" +
+                "You may choose of 4 spells, 'earth' (1), 'air' (2), 'water' (3) or 'fire' (4). \n" +
                 "They each do different damage based on which monster they are sent against.\n" +
                 "Press the corresponding button to which spell you mean to use!\n", MonsterName);
-            spell = Convert.ToInt32(Console.ReadLine());
+            try
+            {
+                spell = Convert.ToInt32(Console.ReadLine());
+            }
+            catch (Exception ex)
+            {
+                Random rand = new Random();
+                spell = rand.Next(1, 4);
+                Console.WriteLine("You fool, you entered an invalid value\n" +
+                    "Your spell has defaulted to random, its value is {0}", spell);
+            }
             switch (MonsterType)
             {
                 case "Earth":

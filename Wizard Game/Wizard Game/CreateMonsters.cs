@@ -42,9 +42,9 @@ namespace WizardGame
                     wizard1.health = 10 * wizard1.healthLevel;
                     xpGained = rand.Next(monster.LowestXp, monster.HighestXp);
                     wizard1.xp += xpGained;
-                    if (wizard1.xp > xpReq)
+                    if (wizard1.xp >= xpReq)
                     {
-                        wizard1.level++;
+                        wizard1.level +=1;
                         Console.WriteLine("Congratulations! " + wizard1.name + " has levelled up to level " + wizard1.level + "!\nYou may now choose a skill to level up!");
                         wizard1.IncreaseStats();
                         switch (wizard1.level)
