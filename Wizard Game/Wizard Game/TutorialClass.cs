@@ -4,6 +4,7 @@ namespace WizardGame
 {
     public class TutorialClass
     {
+        public string decision;
         public Wizard wizard1 = new Wizard();
 
         public void Tutorial()
@@ -17,27 +18,26 @@ namespace WizardGame
             wizard1.Introduce();
             Console.WriteLine("\nIn this game there are two basic skills. Attack, and Health. You can attack using spells.");
             wizard1.IncreaseStats();
-            Console.WriteLine("For information about Attack, Health, or Spells. Press 1, 2, 3.         (Press any other key to continue)")
-           
-
+            Console.WriteLine("For information about Attack, Health, or Spells. Press 1, 2, 3.\n(Press any other key to continue)");
             while (true)
             {
-                public int decision = Console.ReadLine();
+                decision = Console.ReadLine();
                 switch (decision)
-                    {
-                    case 1;
-                        Console.WriteLine("\nAttack is the amount of damage your wizard does to an enemy.")
+                {
+                    case "1":
+                        Console.WriteLine("\nAttack is the amount of damage your wizard does to an enemy.");
                         continue;
-                    case 2; 
-                         Console.WriteLine("Health is the amount of damage your wizard can take before it dies.");
-                         continue;
-                    case 3; 
-                         Console.WriteLine("Currntly you have four spells. Different spells are effective against different enemies.");
-                         Console.WriteLine("As you use spells, you will be able to check how effective it was after use.");
-                         continue;  
-                     default; 
-                         break;
-               }
+                    case "2":
+                        Console.WriteLine("Health is the amount of damage your wizard can take before it dies.");
+                        continue;
+                    case "3":
+                        Console.WriteLine("Currntly you have four spells. Different spells are effective against different enemies.");
+                        Console.WriteLine("As you use spells, you will be able to check how effective it was after use.");
+                        continue;
+                    default:
+                        break;
+                }
+                break;
             }
             
             Console.WriteLine("It's time to fight your first enemy, a goblin! When you are ready, press enter.\n");
@@ -47,8 +47,9 @@ namespace WizardGame
             Console.ReadLine();
             Console.WriteLine("Yowzers! You beat the goblin!\nNow you will enter the main game.");
             Console.ForegroundColor = ConsoleColor.Red;
-            Console.WriteLine("Press any key to continue. . .")
+            Console.WriteLine("Press any key to continue. . .");
             Console.ForegroundColor = ConsoleColor.White;
+            Console.Clear();
         }
     }
 }

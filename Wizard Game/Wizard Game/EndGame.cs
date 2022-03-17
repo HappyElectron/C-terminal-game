@@ -10,7 +10,7 @@ namespace WizardGame
             {
                 Console.WriteLine("\n");
             }
-            Console.WriteLine("Well done, you have finished your journey in the wizard of OZ\n" +
+            Console.WriteLine("Well done, you have finished your journey! \n" +
                 "Thanks for playing!\n\n\n");
             Thread.Sleep(2000);
             Console.WriteLine("...");

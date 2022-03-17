@@ -93,6 +93,7 @@ namespace WizardGame
             nextLevel = wizard1.level + 1;
             Console.WriteLine("Yowza! You beat the monster!\nYou received " + xpGained + " experience from the monster.\nThis means " + wizard1.name + " needs " + xpReqLvl + " experience to get to level " + nextLevel + ".\nPress any button to fight the next enemy:");
             Console.ReadLine();
+            Console.Clear();
         }
     }
 }
