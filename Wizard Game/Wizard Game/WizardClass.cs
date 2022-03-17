@@ -28,14 +28,14 @@ namespace WizardGame
             {
                 case "1":
                     wizard1.attackLevel++;
-                    wizard1.attack = 5* wizard1.attackLevel;
+                    wizard1.attack = 3* wizard1.attackLevel;
                     string attackLevelString = Convert.ToString(wizard1.attackLevel);
                     string attackString = Convert.ToString(wizard1.attack);
                     Console.WriteLine(name + "'s attack level has been increased to " + attackLevelString + "!\nThis means " + name + " now does " + attackString + " base damage.");
                     break;
                 case "2":
                     wizard1.healthLevel = wizard1.healthLevel +1;
-                    wizard1.health = wizard1.healthLevel * 10;
+                    wizard1.health = wizard1.healthLevel * 5;
                     string healthLevelString = Convert.ToString(wizard1.healthLevel);
                     string healthString = Convert.ToString(wizard1.health);
                     Console.WriteLine(name + "'s health level has been increased to " + healthLevelString + "!\nThis means " + name + " now has {0} health points.",wizard1.health);

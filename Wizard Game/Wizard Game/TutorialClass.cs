@@ -31,7 +31,7 @@ namespace WizardGame
                         Console.WriteLine("Health is the amount of damage your wizard can take before it dies.");
                         continue;
                     case "3":
-                        Console.WriteLine("Currntly you have four spells. Different spells are effective against different enemies.");
+                        Console.WriteLine("Currently you have four spells. Different spells are effective against different enemies.");
                         Console.WriteLine("As you use spells, you will be able to check how effective it was after use.");
                         continue;
                     default:

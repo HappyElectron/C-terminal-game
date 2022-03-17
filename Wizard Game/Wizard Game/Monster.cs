@@ -51,8 +51,7 @@ namespace WizardGame
         public void TakeDamage()
         {
             Console.WriteLine("Now it's your turn! You may attack the {0}.\n" +
-                "You may choose of 4 spells, (1) Earth, (2) Air, (3) Later, or (4) Fire. \n" +
-                "They each do different damage based on which monster they are sent against.\n" +
+                "You may choose of 4 spells, (1) Earth, (2) Air, (3) Water, or (4) Fire. \n" +
                 "Press the corresponding button to which spell you mean to use!\n", MonsterName);
             try
             {
