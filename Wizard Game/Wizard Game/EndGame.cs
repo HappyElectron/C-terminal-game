@@ -6,18 +6,18 @@ namespace WizardGame
     {
         public void function()
         {
-            for(int i = 0; i < 100; i++)
-            {
-                Console.WriteLine("\n");
-            }
+            Console.Clear();
             Console.WriteLine("Well done, you have finished your journey! \n" +
-                "Thanks for playing!\n\n\n");
-            Thread.Sleep(2000);
+                "Thanks for playing!");
+            Console.Clear();
+            Thread.Sleep(1500);
             Console.WriteLine("...");
-            Thread.Sleep(4000);
+            Thread.Sleep(3000);
             Console.ForegroundColor = ConsoleColor.Red;
             Console.WriteLine("the game is never really over... Kodie");
             while (true) { }
+            
+            
             
         }
     }
