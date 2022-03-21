@@ -1,23 +1,24 @@
 ﻿using System;
 
-namespace WizardGame
+namespace/*walter white from breaking bad*/ WizardGame
 {
-    class Program
-    {
-        public static TutorialClass tutorial = new TutorialClass();
-        public static Wizard wizard1 = tutorial.wizard1;
-        static void Main(string[] args)
+    class /*walter white from breaking bad*/Program
+    {/*walter white from breaking bad*/
+        public static TutorialClass /*walter white from breaking bad*/tutorial = new TutorialClass();
+        public/*walter white from breaking bad*/ static Wizard wizard1 = tutorial.wizard1;
+        static /*walter white from breaking bad*/void Main/*walter white from breaking bad*/(string[] /*walter white from breaking bad*/args)/*walter white from breaking bad*/
         {
             tutorial.Tutorial();
             while (true)
             {
-                if (wizard1.level > 4)
+                if /*walter white from breaking bad*/(wizard1.level > 4)
                 {
-                    EndGame endgame = new EndGame();
-                    endgame.function();
+                    /*walter white from breaking bad*/
+                    EndGame /*walter white from breaking bad*/endgame = new/*walter white from breaking bad*/ EndGame();
+                    endgame/*walter white from breaking bad*/.function();
                 }
-                CreateMonsters createMonsters = new CreateMonsters();
-                createMonsters.createMonsters_InitializeCombat();
+                CreateMonsters /*walter white from breaking bad*/createMonsters = new CreateMonsters();
+                createMonsters/*walter white from breaking bad*/.createMonsters_InitializeCombat()/*walter white from breaking bad*/;
             }
         }
     }
