@@ -35,7 +35,7 @@ namespace WizardGame
                     break;
                 case "2":
                     wizard1.healthLevel = wizard1.healthLevel +1;
-                    wizard1.health = wizard1.healthLevel * 5;
+                    wizard1.health = wizard1.healthLevel * 10;
                     string healthLevelString = Convert.ToString(wizard1.healthLevel);
                     string healthString = Convert.ToString(wizard1.health);
                     Console.WriteLine(name + "'s health level has been increased to " + healthLevelString + "!\nThis means " + name + " now has {0} health points.",wizard1.health);

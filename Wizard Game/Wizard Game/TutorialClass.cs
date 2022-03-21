@@ -47,7 +47,8 @@ namespace WizardGame
             Console.ReadLine();
             Console.WriteLine("Yowzers! You beat the goblin!\nNow you will enter the main game.");
             Console.ForegroundColor = ConsoleColor.Red;
-            Console.WriteLine("Press any key to continue. . .");
+            Console.WriteLine("\n\nPress any key to continue. . .");
+            Console.ReadLine();
             Console.ForegroundColor = ConsoleColor.White;
             Console.Clear();
         }
