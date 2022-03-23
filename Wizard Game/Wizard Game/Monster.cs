@@ -53,16 +53,28 @@ namespace WizardGame
             Console.WriteLine("Now it's your turn! You may attack the {0}.\n" +
                 "You may choose of 4 spells, (1) Earth, (2) Air, (3) Water, or (4) Fire. \n" +
                 "Press the corresponding button to which spell you mean to use!\n", MonsterName);
-            try
+            while (true)
             {
-                spell = Convert.ToInt32(Console.ReadLine());
-            }
-            catch (Exception ex)
-            {
-                Random rand = new Random();
-                spell = rand.Next(1, 4);
-                Console.WriteLine("You fool, you entered an invalid value\n" +
-                    "Your spell has been defaulted to random, its value is {0}", spell);
+                try
+                {
+                    spell = Convert.ToInt32(Console.ReadLine());
+                    if(spell != 1 && spell != 2 && spell != 3 && spell != 4)
+                    {
+                        Random rand = new Random();
+                        spell = rand.Next(1, 4);
+                        Console.WriteLine("You fool, you entered an invalid value\n" +
+                            "Your spell has been defaulted to random, its value is {0}", spell);
+                    }
+                    break;
+                }
+                catch (Exception ex)
+                {
+                    Random rand = new Random();
+                    spell = rand.Next(1, 4);
+                    Console.WriteLine("You fool, you entered an invalid value\n" +
+                        "Your spell has been defaulted to random, its value is {0}", spell);
+                    break;
+                }
             }
             switch (MonsterType)
             {
@@ -102,12 +114,6 @@ namespace WizardGame
                     Health -= damageTaken;
                     break;
 
-                }
-                else
-                {
-                    Console.WriteLine("You fool, you entered an invalid value.\n" +
-                        " Try again now, you dimwit.\n");
-                    continue;
                 }
             }
         }

@@ -48,11 +48,10 @@ namespace WizardGame
                 }
             }
             Console.Out.NewLine = "\r\n";
-            Thread.Sleep(1500);
-            Console.WriteLine("\n...");
+            Console.ForegroundColor = ConsoleColor.White;
             Thread.Sleep(3000);
-            Console.ForegroundColor = ConsoleColor.Red;
-            Console.WriteLine("\n\nThe game is never really over... Kodie");
+            Console.WriteLine("\n\nThanks for playing Wizard Game, made by Aiden, Ned, Matthew, Abdalrhman and Tama");
+            while (true) { }
         }
     }
 }

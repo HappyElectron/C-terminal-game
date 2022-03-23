@@ -13,7 +13,7 @@ namespace WizardGame
             {
                 CreateMonsters createMonsters = new CreateMonsters();
                 createMonsters.createMonsters_InitializeCombat();
-                if (wizard1.level >= 4)
+                if (wizard1.level > 4)
                 {
                     EndGame endgame = new EndGame();
                     endgame.function();
